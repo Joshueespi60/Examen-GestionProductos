@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de Productos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-glow"></div>
+
+    <main class="container">
+      <header class="hero">
+        <p class="chip"> </p>
+        <h1>Gestion de Productos</h1>
+        <p>
+         
+        </p>
+      </header>
+
+      <section class="panel form-panel">
+        <h2>Registrar Producto</h2>
+        <form id="producto-form" class="grid-form">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Ej: Laptop Lenovo" required />
+          </label>
+
+          <label>
+            Categoria
+            <input type="text" name="categoria" placeholder="Ej: Tecnologia" required />
+          </label>
+
+          <label class="full-width">
+            Descripcion
+            <textarea
+              name="descripcion"
+              rows="3"
+              placeholder="Descripcion del producto"
+              required
+            ></textarea>
+          </label>
+
+          <label>
+            Precio
+            <input type="number" name="precio" min="0" step="0.01" required />
+          </label>
+
+          <label>
+            Stock
+            <input type="number" name="stock" min="0" step="1" required />
+          </label>
+
+          <label>
+            Estado
+            <select name="estado" required>
+              <option value="Disponible">Disponible</option>
+              <option value="Agotado">Agotado</option>
+              <option value="Descontinuado">Descontinuado</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn-primary full-width">Guardar Producto</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title-row">
+          <h2>Inventario</h2>
+          <button id="recargar-btn" class="btn btn-ghost" type="button">Recargar</button>
+        </div>
+
+        <div id="mensaje" class="mensaje" role="status" aria-live="polite"></div>
+
+        <div id="productos-container" class="cards"></div>
+      </section>
+    </main>
+
+    <div id="edit-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="edit-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="edit-title">Editar Producto</h3>
+          <button id="cerrar-modal" class="icon-btn" type="button" aria-label="Cerrar">
+            x
+          </button>
+        </div>
+
+        <form id="edit-form" class="grid-form">
+          <label>
+            Nombre
+            <input type="text" name="nombre" required />
+          </label>
+
+          <label>
+            Categoria
+            <input type="text" name="categoria" required />
+          </label>
+
+          <label class="full-width">
+            Descripcion
+            <textarea name="descripcion" rows="3" required></textarea>
+          </label>
+
+          <label>
+            Precio
+            <input type="number" name="precio" min="0" step="0.01" required />
+          </label>
+
+          <label>
+            Stock
+            <input type="number" name="stock" min="0" step="1" required />
+          </label>
+
+          <label>
+            Estado
+            <select name="estado" required>
+              <option value="Disponible">Disponible</option>
+              <option value="Agotado">Agotado</option>
+              <option value="Descontinuado">Descontinuado</option>
+            </select>
+          </label>
+
+          <div class="modal-actions full-width">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+            <button type="button" id="cancelar-edicion" class="btn btn-secondary">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
