@@ -44,16 +44,12 @@ Gestion-de-Productos/
 |   |-- js/
 |   |   `-- app.js
 |   `-- assets/
-|       `-- README.md
+|       
 |-- .env
-|-- .env.example
-|-- .gitignore
 |-- app.js
 |-- package.json
 |-- package-lock.json
 |-- README.md
-|-- README_BACKEND.md
-|-- REPORTE_FINAL_EXAMEN.md
 `-- server.js
 ```
 
