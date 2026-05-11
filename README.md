@@ -145,15 +145,6 @@ Se recomienda incluir en la entrega:
 6. Vista responsive en celular (dev tools).
 
 ## 13. Autor
-- Estudiante: Completar con nombre y apellido.
+- Estudiante: Espinal Ontaneda Adony Joshue
 
-## 14. Indicaciones para entrega en GitHub y ZIP
-1. Subir el proyecto a un repositorio GitHub publico.
-2. Verificar que NO se suban `node_modules` ni `.env`.
-3. Comprimir la carpeta del proyecto en ZIP.
-4. Renombrar el ZIP como:
-```txt
-Apellido_Nombre_Examen_Parcial.zip
-```
 
-Nota: si aun no se conoce el nombre final del estudiante, renombrar el ZIP antes de entregar en la plataforma.
