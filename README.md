@@ -43,8 +43,7 @@ Gestion-de-Productos/
 |   |   `-- styles.css
 |   |-- js/
 |   |   `-- app.js
-|   `-- assets/
-|       
+|   `-- assets/     
 |-- .env
 |-- app.js
 |-- package.json
@@ -71,8 +70,6 @@ Luego, antes de ejecutar, agregar la URI real de MongoDB Atlas:
 PORT=3000
 MONGO_URI=mongodb+srv://usuario:password@cluster.mongodb.net/gestion_productos
 ```
-
-Tambien existe `.env.example` como referencia.
 
 ## 7. Ejecucion
 Desde la raiz:
